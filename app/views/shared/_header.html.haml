@@ -1,5 +1,5 @@
 .header
-  .header-innner
+  .header-top
     .header_top__title
       = link_to root_path,class: 'header_top__title--logo' do
         = image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?1016580576', :class => "mercari_logo")
@@ -10,3 +10,89 @@
         = link_to root_path, class: 'header_top__form--input-box__btn' do
           = fa_icon "search"
   .header-nav.clearfix
+    %ul.header-nav-left
+      %li.header-nav-left__category
+        %h2
+          = fa_icon "list-ul"
+          = link_to 'カテゴリーから探す', "#"
+        %ul.header-nav-left__brand__wrap
+          %li
+            %h3
+              = link_to 'レディース', "#"
+            %ul
+              %li
+                = link_to 'トップス', "#"
+                %ul
+                  %li
+                    = link_to '', "#"
+                  %li
+                    = link_to '', "#"
+                  %li
+                    = link_to '', "#"
+                  %li
+                    = link_to '', "#"
+            %h3
+              = link_to 'メンズ', "#"
+            %h3
+              = link_to 'ベビー・キッズ', "#"
+            %h3
+              = link_to 'インテリア・住まい・小物', "#"
+            %h3
+              = link_to '本・音楽・ゲーム', "#"
+            %h3
+              = link_to 'おもちゃ・ホビー・グッズ', "#"
+            %h3
+              = link_to 'コスメ・香水・美容', "#"
+            %h3
+              = link_to '家電・スマホ・カメラ', "#"
+            %h3
+              = link_to 'スポーツ・レジャー', "#"
+            %h3
+              = link_to 'ハンドメイド', "#"
+            %h3
+              = link_to 'チケット', "#"
+            %h3
+              = link_to '自動車・オートバイ', "#"
+            %h3
+              = link_to 'その他', "#"
+            %h3
+              = link_to 'カテゴリー一覧', "#"
+          
+          %li.header-nav-left__brand
+            %h2
+              = fa_icon "tag"
+              = link_to 'ブランドから探す', "#"
+            %ul.header-nav-left__brand__wrap
+              %li
+                %h3
+                  = link_to 'シャネル', "#"
+                %h3
+                  = link_to 'ナイキ', "#"
+                %h3
+                  = link_to 'ルイ　ヴィトン', "#"
+                %h3
+                  = link_to 'シュプリーム', "#"
+                %h3
+                  = link_to 'アディダス', "#"
+                %h3
+                  = link_to 'ブランド一覧', "#"
+    
+    %ul.header-nav-user
+      -# - if user_signed_in?
+      %li.header-nav-user--news
+        %i.far.fa-bell
+          = link_to 'お知らせ'
+      %li.header-nav-user--todo
+        %i.fas.fa-check
+          = link_to 'やることリスト'
+      %li.header-nav-user--mypage
+        %i.far.fa-smile-beam
+          = link_to 'マイページ'
+      -# - else
+      -#   %ul.header-nav-right
+      -#     %li.header-nav-right__login
+      -#       = link_to 'ログイン'
+      -#     %li.header-nav-right__signup
+      -#       = link_to '新規会員登録'
+        
+
