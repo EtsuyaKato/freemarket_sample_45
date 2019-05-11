@@ -8,27 +8,28 @@
   width: 100vw;
   height: 108px; 
   margin: 0 auto;
+  padding: 8px 0 0 50px;
     &_top {
       height: 50px;
-      padding: 8px 0 0 0;
       &__title {
+        padding-top: 5px;
         height: 40px;
         float: left;
         &--logo img {
-          height: 36px;
+          height: 40px;
           float: left;
         }
       }
       &__form {
         height:  40px;
         float: left;
-        margin: 0 0 0 40px;
+        margin: 0 0 0 45px;
         &--input-box {
           position: relative;
           &__text {
             background-color: #E6E6E6;
             height: 50px;
-            width: 841px;
+            width: 900px;
             padding: 24px 10px;
             box-sizing: border-box;
             font-size: 16px;
@@ -49,6 +50,7 @@
       margin: 14px 0 0;
       height: 42px;
       .header-nav-left {
+        float: left;
         &:hover {
           cursor: pointer;
         }
@@ -76,9 +78,111 @@
             }
           }
         }
-        
+        &__brand {
+          float: left;
+          padding: 0 0 0 16px;
+          position: relative;
+          z-index: 99;
+          &:hover ul {
+            display: block;
+          }
+          h2 {
+            font-size: 14px;
+            font-weight: 400;
+            color: red;
+            a {
+              font-weight: bold;
+              text-decoration: none;
+              display: inline-block;
+              color: #333;
+              width: 130px;
+              line-height: 40px;
+              &:hover {
+                color: #0099e8;
+              } 
+            }
+          }
+
+          &__wrap {
+            display: none;
+            position: absolute;
+            top: 38px;
+            left: -34px;
+            background: #fff;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24);
+            li {
+              width: 224px;
+              &:hover li {
+                display: block;
+              }
+              h3 {
+                font-weight: 400px;
+                font-size: 14px;
+                a {
+                  text-decoration: none;
+                  display: inline-block;
+                  width: 192px;
+                  padding: 0 16px;
+                  line-height: 40px;
+                  color: black;
+                  &:hover {
+                    background-color: #FC0000;
+                    color: #fff;
+                  }
+                }
+              }
+              ul {
+                position: absolute;
+                top: 0px;
+                left: 224px;
+                bottom: 0px;
+                background: #fff;
+                box-shadow: 1px 0 0 0 #eee inset;
+                li {
+                  display: none;
+                  width: 224px;
+                  &:hover li {
+                    display: block;
+                  }
+                  a {
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    display: block;
+                    color: black;
+                    font-size: 14px;
+                    &:hover {
+                      background-color: #FAFAFA;
+                    }
+                  }
+                  ul {
+                    position: absolute;
+                    top: 0;
+                    left: 224px;
+                    bottom: 0;
+                    background: #fff;
+                    box-shadow: 1px 0 0 0 #eee inset;
+                    li {
+                      display: none;
+                      width: 320px;
+                      a {
+                        text-decoration: none;
+                        padding: 8px 16px;
+                        display: block;
+                        color: black;
+                        font-size: 14px;
+                        &:hover {
+                          background-color: #FAFAFA;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
-
+    
     
 }
