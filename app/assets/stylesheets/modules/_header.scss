@@ -183,6 +183,58 @@
         }
       }
     }
-    
+    .header-nav-user {
+      height: 42px;
+      float: left;
+      display: block;
+
+      ul.header-nav-user {
+        display: block;
+        padding-left: 0;
+        }
+
+        li.header-nav-user--news {
+          width: 100px;
+          height: 45px;
+          position: relative;
+          display: inline-block;
+          line-height: 32px;
+          i.far.fa-bell {
+            color: #ccc;
+            font-size: 13px;
+          }
+            a {
+              color: #333;
+              text-decoration: none;
+            }
+        }
+
+        li.header-nav-user--todo {
+          width: 110px;
+          height: 39px;
+          position: relative;
+          display: inline-block;
+          line-height: 32px;
+          i.fas.fa-check {
+            color: #ccc;
+            font-size: 13px;
+          }
+            a {
+              font-weight: normal;
+              color: #333;
+              text-decoration: none;
+            }
+        }
+
+        li.header-nav-use--mypage {
+          position: relative;
+          width: 110px;
+          height: 39px;
+          padding-left: 14px;
+          line-height: 32px;
+          display: inline-block;
+        }
+
+    }
     
 }
