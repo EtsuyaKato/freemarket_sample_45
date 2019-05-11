@@ -24,15 +24,27 @@
                 = link_to 'トップス', "#"
                 %ul
                   %li
-                    = link_to '', "#"
+                    = link_to 'ジャケット/アウター', "#"
                   %li
-                    = link_to '', "#"
+                    = link_to 'パンツ', "#"
                   %li
-                    = link_to '', "#"
+                    = link_to 'スカート', "#"
                   %li
-                    = link_to '', "#"
+                    = link_to '----', "#"
             %h3
               = link_to 'メンズ', "#"
+              %ul
+                %li
+                  = link_to 'トップス', "#"
+                  %ul
+                    %li
+                      = link_to 'ジャケット/アウター', "#"
+                    %li
+                      = link_to 'パンツ', "#"
+                    %li
+                      = link_to '靴', "#"
+                    %li
+                      = link_to '----', "#"
             %h3
               = link_to 'ベビー・キッズ', "#"
             %h3
@@ -58,24 +70,24 @@
             %h3
               = link_to 'カテゴリー一覧', "#"
           
-          %li.header-nav-left__brand
-            %h2
-              = fa_icon "tag"
-              = link_to 'ブランドから探す', "#"
-            %ul.header-nav-left__brand__wrap
-              %li
-                %h3
-                  = link_to 'シャネル', "#"
-                %h3
-                  = link_to 'ナイキ', "#"
-                %h3
-                  = link_to 'ルイ　ヴィトン', "#"
-                %h3
-                  = link_to 'シュプリーム', "#"
-                %h3
-                  = link_to 'アディダス', "#"
-                %h3
-                  = link_to 'ブランド一覧', "#"
+      %li.header-nav-left__brand
+        %h2
+          = fa_icon "tag"
+          = link_to 'ブランドから探す', "#"
+        %ul.header-nav-left__brand__wrap
+          %li
+            %h3
+              = link_to 'シャネル', "#"
+            %h3
+              = link_to 'ナイキ', "#"
+            %h3
+              = link_to 'ルイ　ヴィトン', "#"
+            %h3
+              = link_to 'シュプリーム', "#"
+            %h3
+              = link_to 'アディダス', "#"
+            %h3
+              = link_to 'ブランド一覧', "#"
     
     %ul.header-nav-user
       -# - if user_signed_in?
