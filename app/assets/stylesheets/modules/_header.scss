@@ -1,0 +1,44 @@
+.header {
+  background-color: #fff;
+  width: 100vw;
+  height: 108px; 
+  margin: 0 auto;
+    &_top {
+      height: 50px;
+      padding: 8px 0 0 0;
+      &__title {
+        height: 40px;
+        float: left;
+        &--logo img {
+          height: 36px;
+          float: left;
+        }
+      }
+      &__form {
+        height:  40px;
+        float: left;
+        margin: 0 0 0 40px;
+        &--input-box {
+          position: relative;
+          &__text {
+            background-color: #E6E6E6;
+            height: 50px;
+            width: 841px;
+            padding: 24px 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid transparent;
+          }
+          &__btn {
+            font-size: 15px;
+            position: absolute;
+            color: black;
+            top: 15px;
+            right: 15px;
+          }
+        }
+      }
+    }
+    
+}
