@@ -80,7 +80,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # view template 
 gem 'erb2haml'
 gem 'haml-rails'
-
 gem 'font-awesome-rails'
 gem 'carrierwave'
 gem 'fog-aws'
