@@ -1,37 +1,37 @@
 .pickup-container {
-  background-color:$light-gray;
+  background-color:#F5F5F5;
   text-align: center;
   margin: 0 auto;
 }
 .pickup-head {
     font-size: 28px;
     font-weight: 800;
-    color:$black;
+    color:black;
     padding-top: 40px;
 }
 
-.items__pickup__container{
+.products__pickup__container{
   letter-spacing: 2px;
   margin: 25px;
   font-size: 22px;
   font-weight: 800;
   &__category {
     text-decoration: none;
-    color: $light-blue;
+    color: #0095EC;
   }
 }
 
-.item-boxs{
-  ul{
-    margin:0 auto;
-    width: 932px;
-  }
-}
+// .product-boxs{
+//   ul{
+//     margin:0 auto;
+//     width: 932px;
+//   }
+// }
 
-.item-box{
+.product-box{
   display: inline-block;
   margin-left: 15px;
-  height:330px;
+  height:400px;
   width:213px;
   background-color: white;
   text-align: left;
@@ -39,13 +39,13 @@
     height: 220px;
   }
   &__image {
-    width:213px;
+    width: 250px;
     height:220px;
     object-fit: cover;
   }
   &__body {
     padding: 16px;
-    color: $black;
+    color: black;
   }
   &__text {
     height: 3em;
