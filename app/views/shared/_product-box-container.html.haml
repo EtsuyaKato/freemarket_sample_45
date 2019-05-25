@@ -1,0 +1,8 @@
+%h3.products__pickup__container
+  = link_to "" ,class: "products__pickup__container__category" do
+    = "レディース 新着アイテム"
+    %session.product-boxs.clearfix
+  =render 'shared/product-box'
+
+  .view-all
+    = link_to "すべての商品を見る", root_path

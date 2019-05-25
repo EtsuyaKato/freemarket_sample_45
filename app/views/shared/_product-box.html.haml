@@ -1,0 +1,17 @@
+%li.product-box
+  = link_to "" do
+    %figure.product-box__figure
+      %image{src: "https://www.zeirisi.co.jp/wp-content/uploads/2018/02/noimage-300x300.jpg", alt: "",class: "product-box__image"}
+  .product-box__body
+    .product-box__text
+      .product-box__name
+        sample
+    .product-box__num
+      .product-box__num__price
+        100
+        .nice
+          = fa_icon "heart", type: :regular, class: "icon-like-border"
+          %span
+            1
+      %p.product-box__num__price-tax
+        (税込)
